@@ -23,6 +23,6 @@
   </xs:element>
   <xs:element name="sku" type="xs:string"/>
   <xs:element name="name" type="xs:string"/>
-  <xs:element name="price" type="xs:decimal"/>
-  <xs:element name="quantity" type="xs:int"/>
+  <xs:element name="price" type="xs:double"/>
+  <xs:element name="quantity" type="xs:double"/>
 </xs:schema>
