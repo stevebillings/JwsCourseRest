@@ -2,6 +2,8 @@ lib
 classes
 webapp
 jaxb-ri-2.2.7
+jaxrs-ri
 bin
 .classpath
 .project
+*.swp

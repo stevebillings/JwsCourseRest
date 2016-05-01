@@ -1,10 +1,10 @@
-SET TOMCAT_PATH=C:\Apps\apache-tomcat-7.0.42
+SET TOMCAT_PATH=C:\apps\apache-tomcat-7.0.50
 
 REM copy classes
 cd webapp\inventory\WEB-INF
 rd classes /S /Q
 md classes
-xcopy ..\..\..\classes .\classes /S /Q
+xcopy ..\..\..\classes .\classes /S 
 
 REM create war
 cd ..
