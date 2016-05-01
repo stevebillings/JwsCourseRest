@@ -85,7 +85,10 @@ public class CatalogServiceImpl implements CatalogService {
 	 * 
 	 * - The HTTP body is the XML with the order. - Test curl command: curl -X
 	 * POST -H "Content-Type: application/xml" -d "<order xml>"
-	 * "http://localhost:8080/inventory/rest/catalog/orders"
+	 * "http://localhost:8080/inventory/rest/catalog/orders", or (with xml
+	 * data): curl -X POST -H "Content-Type: application/xml" -d
+	 * "<order><vendorCode>330029</vendorCode><vendorName>My Shop</vendorName><orderNumber>1000339</orderNumber><productOrder><productSku>111003392939</productSku><productName>Kindle E Ink</productName><orderQuantity>5</orderQuantity></productOrder><productOrder><productSku>111003392854</productSku><productName>Kindle Fire</productName><orderQuantity>3</orderQuantity></productOrder></order>"
+	 * http://localhost:8080/inventory/rest/catalog/orders
 	 */
 	@POST
 	@Produces(MediaType.APPLICATION_JSON)
@@ -93,7 +96,7 @@ public class CatalogServiceImpl implements CatalogService {
 	@Path("/orders")
 	public OrderConfirm createOrder(JAXBElement<Order> jaxbOrder) throws Exception {
 
-		Util.log("POST orders request");
+		Util.log("POST /orders request");
 		Order order = jaxbOrder.getValue();
 
 		OrderDAO orderDao = new OrderDAO();
@@ -122,6 +125,7 @@ public class CatalogServiceImpl implements CatalogService {
 		orderConfirm.setTotalOrderPrice(orderConfirmDao.getTotalOrderPrice());
 		orderConfirm.setVendorCode(orderConfirmDao.getVendorCode());
 
+		Util.log("POST /orders response");
 		return orderConfirm;
 	}
 }
