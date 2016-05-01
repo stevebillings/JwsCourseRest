@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="order">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="vendorCode"/>
+        <xs:element ref="vendorName"/>
+        <xs:element ref="orderNumber"/>
+        <xs:element maxOccurs="unbounded" ref="productOrder"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="vendorCode" type="xs:integer"/>
+  <xs:element name="vendorName" type="xs:string"/>
+  <xs:element name="orderNumber" type="xs:integer"/>
+  <xs:element name="productOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="productSku"/>
+        <xs:element ref="productName"/>
+        <xs:element ref="orderQuantity"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="productSku" type="xs:integer"/>
+  <xs:element name="productName" type="xs:string"/>
+  <xs:element name="orderQuantity" type="xs:integer"/>
+</xs:schema>

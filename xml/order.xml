@@ -1,0 +1,15 @@
+<order>
+	<vendorCode>330029</vendorCode>
+	<vendorName>My Shop</vendorName>
+	<orderNumber>1000339</orderNumber>
+	<productOrder>
+		<productSku>111</productSku>
+		<productName>Kindle Fire</productName>
+		<orderQuantity>5</orderQuantity>
+	</productOrder>
+	<productOrder>
+		<productSku>112</productSku>
+		<productName>Kindle Paperwhite</productName>
+		<orderQuantity>3</orderQuantity>
+	</productOrder>
+</order>

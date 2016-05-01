@@ -1,0 +1,16 @@
+<orderConfirm>
+	<vendorCode>330029</vendorCode>
+	<orderNumber>1000339</orderNumber>
+	<confirmNumber>2001192</confirmNumber>
+	<productConfirm>
+		<productSku>111</productSku>
+		<orderQuantity>4</orderQuantity>
+		<price>199.00</price>
+	</productConfirm>
+	<productConfirm>
+		<productSku>112</productSku>
+		<orderQuantity>3</orderQuantity>
+		<price>119.00</price>
+	</productConfirm>
+	<totalOrderPrice>1153.00</totalOrderPrice>
+</orderConfirm>

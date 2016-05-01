@@ -1,0 +1,16 @@
+<catalog>
+	<lastModifiedDate>08-22-2013</lastModifiedDate>
+	<description>Kindle</description>
+	<product>
+		<sku>111</sku>
+		<name>Kindle Fire</name>
+		<price>199.00</price>
+		<quantity>27</quantity>
+	</product>
+	<product>
+		<sku>112</sku>
+		<name>Kindle Paperwhite</name>
+		<price>119.00</price>
+		<quantity>12</quantity>
+	</product>
+</catalog>
