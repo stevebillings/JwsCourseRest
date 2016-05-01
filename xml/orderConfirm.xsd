@@ -12,8 +12,8 @@
     </xs:complexType>
   </xs:element>
   <xs:element name="vendorCode" type="xs:string"/>
-  <xs:element name="orderNumber" type="xs:int"/>
-  <xs:element name="confirmNumber" type="xs:int"/>
+  <xs:element name="orderNumber" type="xs:string"/>
+  <xs:element name="confirmNumber" type="xs:string"/>
   <xs:element name="productConfirm">
     <xs:complexType>
       <xs:sequence>
@@ -26,5 +26,5 @@
   <xs:element name="productSku" type="xs:string"/>
   <xs:element name="orderQuantity" type="xs:int"/>
   <xs:element name="price" type="xs:decimal"/>
-  <xs:element name="totalOrderPrice" type="xs:decimal"/>
+  <xs:element name="totalOrderPrice" type="xs:double"/>
 </xs:schema>
