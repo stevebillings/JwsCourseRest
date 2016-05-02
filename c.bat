@@ -9,4 +9,4 @@ REM compile service
 javac -classpath %JAXB_LIB%;%JAXRS_LIB%;. -d classes .\src\com\uciext\ws\hw2\util\*.java .\src\com\uciext\ws\hw2\backend\model\*.java .\src\com\uciext\ws\hw2\backend\*.java .\src\com\uciext\ws\hw2\backend\impl\*.java .\src\com\uciext\ws\hw2\service\model\catalog\*.java .\src\com\uciext\ws\hw2\service\model\order\*.java .\src\com\uciext\ws\hw2\service\model\orderconfirm\*.java .\src\com\uciext\ws\hw2\service\*.java .\src\com\uciext\ws\hw2\service\impl\*.java 
 
 REM compile client
-REM javac -classpath %JAXB_LIB%;%JAXRS_LIB%;. -d classes .\src\com\uciext\ws\hw2\client\model\catalog\*.java .\src\com\uciext\ws\hw2\client\model\order\*.java .\src\com\uciext\ws\hw2\client\model\orderconfirm\*.java .\src\com\uciext\ws\hw2\client\*.java 
+javac -classpath %JAXB_LIB%;%JAXRS_LIB%;. -d classes .\src\com\uciext\ws\hw2\client\model\catalog\*.java .\src\com\uciext\ws\hw2\client\model\order\*.java .\src\com\uciext\ws\hw2\client\model\orderconfirm\*.java .\src\com\uciext\ws\hw2\client\*.java 
