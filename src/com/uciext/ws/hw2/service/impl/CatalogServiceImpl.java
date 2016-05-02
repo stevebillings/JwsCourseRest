@@ -54,7 +54,6 @@ public class CatalogServiceImpl implements CatalogService {
 	 */
 	@GET
 	@Produces(MediaType.APPLICATION_XML)
-	@Consumes(MediaType.APPLICATION_XML)
 	@Path("/")
 	public Catalog getCatalog() {
 		Util.log("/catalog request");
@@ -92,7 +91,7 @@ public class CatalogServiceImpl implements CatalogService {
 	 * http://localhost:8080/inventory/rest/catalog/orders
 	 */
 	@POST
-	@Produces(MediaType.APPLICATION_JSON)
+	@Produces(MediaType.APPLICATION_XML)
 	@Consumes(MediaType.APPLICATION_XML)
 	@Path("/orders")
 	public OrderConfirm createOrder(JAXBElement<Order> jaxbOrder) throws Exception {
