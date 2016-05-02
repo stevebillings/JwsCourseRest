@@ -22,6 +22,12 @@ public class OrderingClient {
 				Invocation.Builder builder = myResource.request(MediaType.TEXT_PLAIN);
 				String response = builder.get(String.class);
 				System.out.println("Hello: response=" + response);
+			} else if ("Get_Catalog".equalsIgnoreCase(argv[0])) {
+				Client client = ClientBuilder.newClient();
+				WebTarget myResource = client.target("http://127.0.0.1:8080/inventory/rest/catalog");
+				Invocation.Builder builder = myResource.request(MediaType.APPLICATION_XML);
+				String response = builder.get(String.class);
+				System.out.println("Get_Catalog: response=" + response);
 			}
 		} catch (Exception e) {
 			e.printStackTrace();

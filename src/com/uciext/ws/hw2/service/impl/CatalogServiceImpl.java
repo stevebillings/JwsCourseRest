@@ -54,6 +54,7 @@ public class CatalogServiceImpl implements CatalogService {
 	 */
 	@GET
 	@Produces(MediaType.APPLICATION_XML)
+	@Consumes(MediaType.APPLICATION_XML)
 	@Path("/")
 	public Catalog getCatalog() {
 		Util.log("/catalog request");
